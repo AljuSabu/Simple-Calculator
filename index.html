@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculator</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="bg-gradient-to-r from-black to-stone-700 h-screen flex justify-center items-center text-white">
+        <div class="bg-stone-950 rounded-2xl inset-shadow-white inset-shadow-sm h-150 w-100">
+            <input type="text" class="text-6xl text-right p-4 m-5 w-90 mb-0 h-24" id="display" disabled>
+            <div class="keys h-120 w-100 text-white text-4xl grid grid-cols-4 gap-5 p-5">
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 text-orange-400 operator" value="+">+</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 text-orange-400 operator" value="-">-</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 text-orange-400 operator" value="*">&times;</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 text-orange-400 operator" value="/">&divide;</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="7">7</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="8">8</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="9">9</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 operator text-orange-400" value="%">%</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="4">4</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="5">5</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="6">6</button>
+                <button class="flex justify-center items-center rounded-2xl bg-orange-500 shadow-orange-300 shadow-sm active:shadow-inner active:bg-orange-400 active:scale-95 transition-all duration-150 row-span-3" id="equals">=</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="1">1</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="2">2</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="3">3</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 text-orange-500" id="allClear">AC</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150" value="0">0</button>
+                <button class="flex justify-center items-center rounded-2xl bg-stone-900 shadow-stone-500 shadow-sm active:shadow-inner active:bg-stone-800 active:scale-95 transition-all duration-150 decimal" value=".">.</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
