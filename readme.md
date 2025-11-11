@@ -73,7 +73,9 @@ You can open the `index.html` file directly in your browser to use the calculato
 
 ### 📸 Preview
 
+![calculator](./images/calculator%20image.png)
 
+[live@](https://aljusabu.github.io/Simple-Calculator/)
 
 ---
 
